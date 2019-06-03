@@ -19,7 +19,7 @@ public class DeptRest {
 	public Object get(@PathVariable("id") long id) {
 		return this.deptService.get(id) ;
 	}
-	@RequestMapping(value="/dept/add",method=RequestMethod.GET)
+	@RequestMapping(value="/dept/add",method=RequestMethod.POST)
 	public Object add(@RequestBody Dept dept) {
 		return this.deptService.add(dept) ;
 	}
